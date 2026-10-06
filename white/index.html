@@ -2,62 +2,76 @@
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Alumic Aluminio Do Brasil Ltda</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Verdana, Geneva, sans-serif;background:#fff;color:#1b2e1c;line-height:1.7}
-header{padding:24px 40px;border-bottom:1px solid #d4e8d5;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:'Palatino Linotype', Palatino, serif;font-size:1rem;font-weight:700;color:#1b2e1c}
+body{font-family:'Segoe UI', Arial, sans-serif;background:#f5f6fa;color:#444;line-height:1.6}
+header{background:#ffffff;border-bottom:3px solid #3949ab;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:10}
+header h1{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:900;color:#1a1a2e;letter-spacing:.02em}
 nav ul{list-style:none;display:flex;gap:32px}
-nav a{color:#555;text-decoration:none;font-size:.85rem}
-nav a:hover{color:#2e7d32}
-.hero{max-width:720px;margin:80px auto;padding:0 40px;text-align:center}
-.hero-tag{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#2e7d32;display:block;margin-bottom:20px}
-.hero h1{font-family:'Palatino Linotype', Palatino, serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.2;color:#1b2e1c;margin-bottom:20px}
-.hero h1 em{color:#2e7d32;font-style:normal}
-.hero p{color:#555;font-size:1rem;line-height:1.85;margin-bottom:32px}
-.hero-cta{display:inline-block;border:2px solid #2e7d32;color:#2e7d32;padding:12px 36px;text-decoration:none;font-weight:600;font-size:.88rem;letter-spacing:.04em;transition:all .2s}
-.hero-cta:hover{background:#2e7d32;color:white}
-.rule{border:none;border-top:1px solid #d4e8d5;margin:0 40px}
-.section{max-width:720px;margin:72px auto;padding:0 40px}
-.sec-label{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#2e7d32;display:block;margin-bottom:10px}
-.section h2{font-family:'Palatino Linotype', Palatino, serif;font-size:1.5rem;font-weight:700;color:#1b2e1c;margin-bottom:40px;padding-bottom:12px;border-bottom:2px solid #2e7d32}
-.srv-list{list-style:none}
-.srv-list li{padding:20px 0;border-bottom:1px solid #d4e8d5;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:baseline}
-.srv-list li:last-child{border-bottom:none}
-.srv-list strong{font-family:'Palatino Linotype', Palatino, serif;font-size:.95rem;color:#1b2e1c}
-.srv-list span{font-size:.88rem;color:#555;line-height:1.7}
-.sobre-text p{color:#555;line-height:1.9;margin-bottom:16px;font-size:.95rem}
-.meta-list{margin-top:36px;list-style:none}
-.meta-list li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #d4e8d5;font-size:.88rem}
-.meta-list li:last-child{border-bottom:none}
-.meta-list .k{color:#555}
-.meta-list .v{color:#1b2e1c;font-weight:600}
-.contato-info p{font-size:.9rem;color:#555;margin-bottom:10px;line-height:1.6}
-.contato-info a{color:#2e7d32;text-decoration:none}
-footer{background:#f1f7f1}
-footer{color:#5a7a5c;text-align:center;padding:32px 40px;font-size:.78rem;border-top:1px solid #d4e8d5}
-@media(max-width:600px){.srv-list li{grid-template-columns:1fr;gap:6px}nav{display:none}}
+nav a{color:#3949ab;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+nav a:hover{color:#283593}
+.hero{display:grid;grid-template-columns:1fr 380px;min-height:480px}
+.hero-left{background:#f5f6fa;padding:64px 40px 64px 40px;display:flex;flex-direction:column;justify-content:center}
+.hero-eyebrow{font-size:.75rem;letter-spacing:.18em;color:#3949ab;text-transform:uppercase;font-weight:700;margin-bottom:16px}
+.hero-left h2{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:2.6rem;font-weight:900;color:#1a1a2e;line-height:1.15;margin-bottom:20px}
+.hero-left h2 em{color:#3949ab;font-style:normal}
+.hero-left p{color:#444;font-size:1rem;max-width:480px;margin-bottom:32px;line-height:1.75}
+.hero-cta{display:inline-block;background:#3949ab;color:white;padding:14px 32px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
+.hero-cta:hover{background:#283593}
+.hero-right{background:#3949ab;color:#ffffff;padding:48px 36px;display:flex;flex-direction:column;justify-content:center;gap:24px}
+.hero-right h3{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;opacity:.7;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.info-item{border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:16px}
+.info-item:last-child{border-bottom:none;padding-bottom:0}
+.info-label{font-size:.75rem;opacity:.65;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.info-value{font-size:1rem;font-weight:600}
+.section{max-width:960px;margin:72px auto;padding:0 40px}
+.section-label{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:#3949ab;font-weight:700;margin-bottom:12px}
+.section h2{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1.7rem;font-weight:900;color:#1a1a2e;margin-bottom:40px}
+.srv-row{display:flex;gap:24px;align-items:flex-start;padding:24px 0;border-bottom:1px solid #e8eaf6}
+.srv-row:last-child{border-bottom:none}
+.srv-num{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:2rem;font-weight:900;color:#3949ab;opacity:.3;min-width:56px;line-height:1}
+.srv-body h4{font-family:'Segoe UI', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;color:#1a1a2e;margin-bottom:6px}
+.srv-body p{font-size:.9rem;color:#444;line-height:1.65}
+.sobre-grid{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
+.sobre-text p{color:#444;line-height:1.85;margin-bottom:16px}
+.stats-panel{background:#e8eaf6;border-left:4px solid #3949ab;padding:28px}
+.stats-panel p{font-size:.88rem;color:#444;margin-bottom:10px;line-height:1.5}
+.stats-panel p strong{color:#283593;display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+.contato-box{background:#e8eaf6;border-left:4px solid #3949ab;padding:32px;max-width:560px}
+.contato-box p{font-size:.95rem;color:#444;margin-bottom:12px;line-height:1.6}
+.contato-box a{color:#3949ab;text-decoration:none;font-weight:600}
+footer{background:#1a1a2e;color:#6677aa;padding:28px 40px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;margin-top:80px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-right{display:none}.sobre-grid{grid-template-columns:1fr}nav{display:none}}
 </style></head><body>
-<header><span class="logo">Alumic Aluminio Do Brasil Ltda</span><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
+<header><h1>Alumic Aluminio Do Brasil Ltda</h1><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
 <div id="hero" class="hero">
-  <span class="hero-tag">Alumínio · Artigos Domésticos · Qualidade</span>
-  <h1>Produtos em <em>alumínio</em> de <em>qualidade</em> para seu <em>lar</em></h1>
-  <p>A Alumic Aluminio Do Brasil fabrica artigos de alumínio para uso doméstico e pessoal, combinando durabilidade e design. Somos referência em produtos de qualidade superior para famílias brasileiras.</p>
-  <a href="#contato" class="hero-cta">Solicitar proposta</a>
+  <div class="hero-left">
+    <p class="hero-eyebrow">Alumínio · Qualidade · Uso Doméstico</p>
+    <h2>Artigos de <em>alumínio</em> para sua <em>casa</em> com <em>qualidade</em></h2>
+    <p>A Alumic Aluminio Do Brasil fabrica artigos de alumínio para uso doméstico e pessoal com excelência e durabilidade. Somos referência no mercado cearense, oferecendo produtos que unem funcionalidade e design.</p>
+    <a href="#contato" class="hero-cta">Falar com especialista</a>
+  </div>
+  <div class="hero-right">
+    <h3>Alumic Aluminio Do Brasil Ltda</h3>
+    <div class="info-item"><div class="info-label">Fundação</div><div class="info-value">1993</div></div>
+    <div class="info-item"><div class="info-label">Localização</div><div class="info-value">Crato — CE</div></div>
+    
+    <div class="info-item"><div class="info-label">CNPJ</div><div class="info-value">73.232.803/0001-45</div></div>
+  </div>
 </div>
-<hr class="rule">
-<div id="servicos" class="section"><span class="sec-label">Atuação</span><h2>Áreas de especialidade</h2><ul class="srv-list"><li><strong>Fabricação de Artigos Domésticos</strong><span>Produção de utensílios e peças em alumínio para a cozinha e uso residencial.</span></li><li><strong>Artigos para Uso Pessoal</strong><span>Acessórios em alumínio pensados para o dia a dia com funcionalidade e estilo.</span></li><li><strong>Customização de Produtos</strong><span>Soluções personalizadas em alumínio conforme as especificações de cada cliente.</span></li><li><strong>Controle de Qualidade</strong><span>Todos os produtos passam por rigorosos processos de inspeção e garantia.</span></li></ul></div>
-<hr class="rule">
-<div id="sobre" class="section"><span class="sec-label">Sobre a empresa</span><h2>A empresa</h2>
-<div class="sobre-text"><p>A Alumic Aluminio Do Brasil Ltda é uma empresa especializada na fabricação de artigos em alumínio para uso doméstico e pessoal, atendendo o mercado brasileiro com produtos de alta qualidade. Localizada em Crato, Ceará, nos dedicamos a oferecer soluções práticas e duráveis para o cotidiano das famílias.</p><p>Nosso diferencial está na combinação de tecnologia moderna, matérias-primas selecionadas e equipe qualificada que garante produtos excepcionais. Estamos comprometidos com a sustentabilidade, a inovação e a satisfação de nossos clientes em cada artigo fabricado.</p></div>
-<ul class="meta-list">
-  <li><span class="k">Razão Social</span><span class="v">Alumic Aluminio Do Brasil Ltda</span></li>
-  <li><span class="k">CNPJ</span><span class="v">73.232.803/0001-45</span></li>
-  <li><span class="k">Estado</span><span class="v">Ceará</span></li>
-  <li><span class="k">Fundação</span><span class="v">1993</span></li>
-  <li><span class="k">Situação</span><span class="v">✅ Ativa</span></li>
-</ul></div>
-<hr class="rule">
-<div id="contato" class="section"><span class="sec-label">Fale conosco</span><h2>Contato</h2>
-<p style="color:#555;margin-bottom:24px;font-size:.95rem">Fale com nossa equipe e conheça nossas soluções.</p>
-<div class="contato-info"><p><strong>Telefone:</strong> <a href="tel:+558835211536">(88) 3521-1536</a></p><p><strong>Endereço:</strong> R. Padre Cicero, 1680, Muriti, Crato — CE, CEP 63132-000</p></div></div>
-<footer><p>Alumic Aluminio Do Brasil Ltda · CNPJ 73.232.803/0001-45</p><p>© 1993–2026 Alumic Aluminio Do Brasil Ltda. Todos os direitos reservados.</p></footer>
+<div id="servicos" class="section"><p class="section-label">Como atuamos</p><h2>Nossas áreas de expertise</h2><div class="srv-row"><div class="srv-num">01</div><div class="srv-body"><h4>Fabricação de Artigos Domésticos</h4><p>Produzimos utensílios de alumínio para cozinha e casa com acabamento de primeira qualidade.</p></div></div><div class="srv-row"><div class="srv-num">02</div><div class="srv-body"><h4>Artigos de Uso Pessoal</h4><p>Confeccionamos acessórios e produtos em alumínio para uso pessoal com precisão e durabilidade.</p></div></div><div class="srv-row"><div class="srv-num">03</div><div class="srv-body"><h4>Soluções Customizadas</h4><p>Oferecemos projetos personalizados de artigos de alumínio conforme as necessidades do cliente.</p></div></div><div class="srv-row"><div class="srv-num">04</div><div class="srv-body"><h4>Garantia de Qualidade</h4><p>Todos os nossos produtos passam por rigoroso controle de qualidade antes da entrega.</p></div></div></div>
+<div id="sobre" class="section"><p class="section-label">Sobre a empresa</p><h2>Nossa empresa</h2>
+<div class="sobre-grid">
+  <div class="sobre-text"><p>A Alumic Aluminio Do Brasil é uma empresa consolidada em Crato, Ceará, especializada na fabricação de artigos de alumínio para uso doméstico e pessoal. Com anos de experiência, desenvolvemos produtos que combinam resistência, beleza e funcionalidade para o dia a dia das famílias brasileiras.</p><p>Nosso diferencial está no compromisso com a qualidade, inovação nos processos de produção e atendimento dedicado ao cliente. Utilizamos matéria-prima premium e técnicas modernas para garantir que cada produto saindo de nossa fábrica atenda aos mais altos padrões de excelência.</p></div>
+  <div class="stats-panel">
+    <p><strong>Razão Social</strong>Alumic Aluminio Do Brasil Ltda</p>
+    <p><strong>CNPJ</strong>73.232.803/0001-45</p>
+    <p><strong>Estado</strong>Ceará</p>
+    <p><strong>Situação</strong>✅ Ativa</p>
+  </div>
+</div></div>
+<div id="contato" class="section"><p class="section-label">Fale conosco</p><h2>Fale conosco</h2>
+<div class="contato-box">
+  <p>Estamos disponíveis para apresentar nossas soluções.</p>
+  <p><strong>Telefone:</strong> <a href="tel:+558835211536">(88) 3521-1536</a></p><p><strong>Endereço:</strong> R. Padre Cicero, 1680, Muriti, Crato — CE, CEP 63132-000</p>
+</div></div>
+<footer><span>Alumic Aluminio Do Brasil Ltda — CNPJ 73.232.803/0001-45</span><span>© 1993–2026 Alumic Aluminio Do Brasil Ltda</span></footer>
 </body></html>
